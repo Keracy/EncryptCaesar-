@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Шифратор и Дешифратор</title>
+</head>
+<body>
+  <h1>Зашифровать</h1>
+  <textarea id="encrypt" rows="8" cols="80"></textarea>
+  <label for="encryptKey">Ключ шифрования</label>
+  <input id = "encryptKey" type="number" pattern = "[0-9]{3}">
+  <input value="Зашифровать" type="button" onclick="encrypt()">
+  <br><br><br><br><br><br><br>
+  <h1>Расшифровать</h1>
+  <textarea id="decrypt" rows="8" cols="80"></textarea>
+  <label for="decryptKey">Ключ шифрования</label>
+  <input id = "decryptKey" type="number" pattern = "[0-9]{3}">
+  <input value="Расшифровать" type="button" onclick="decrypt()">
+</body>
+</html>
